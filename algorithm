@@ -1,0 +1,16 @@
+algorithm evensquared;
+// Usefulness: To find the square of N even numbers starting from two.
+// Author: Caio Vitor
+// 28/05/2024
+var
+N = 2, maxN, result: integer
+begin
+read(maxN)
+if(maxN % 2 != 0){
+	maxN = maxN - 1
+}
+while(N <= maxN){
+	result = N * N
+	print("N² = result\n")
+	N = N + 2
+}
